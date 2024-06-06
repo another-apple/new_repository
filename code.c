@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main(){
-	printf("a\n");
-            printf("a\n");
-	     printf("a\n");
+	printf("跑路啦，快乐\n");
+           
 	return 0;
 }
