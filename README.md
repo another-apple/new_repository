@@ -53,4 +53,33 @@ Markdown ,文本修饰语言，用特殊符号修饰正文效果<br>
 2. 测试二级
  1. 油壶
 
+### 表格
+名称|技能|排行
+--|:--:|--:
+蝙蝠侠|有钱|32
+海王|钓鱼|1
+闪电侠|跑|108
+
+### 代码片段
+
+```c
+          #include<stdio.h>
+	  int main(){
+	  printf("hello world\n");
+	  return 0;
+	  }
+```
+```cpp
+           #include<iostream>
+```
+```python
+           import <os>
+```
+```bash
+          echo"测试"
+	  pwd
+	  ps aux
+	  ls -l
+```
+
 
