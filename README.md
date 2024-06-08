@@ -82,4 +82,10 @@ Markdown ,文本修饰语言，用特殊符号修饰正文效果<br>
 	  ls -l
 ```
 
+### 超链接技术
+[Github](https://www.github.com "点击访问")
+
+### 插入图片 只是记载格式，此图片并未真实存在
+![壁纸截图](C;//Users//cui88//Desktop//1.jpg )
+
 
