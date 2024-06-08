@@ -38,8 +38,75 @@ socket sample,查询对应技术的代码样本
 ```bash
           git config --list  //查看git的配置文件
 ```
-Markdown ,文本修饰语言，用特殊符号修饰正文效果<br>
+```bash
+       	  git config --global user.email "邮箱"  //增加个人邮箱配置
+```
+```bash
+	  git config --global user.name "用户名"  //增加个人名字配置
+```
+```bash
+	  ssh-keygen -t rsa -C "注册邮箱"  //创建本地密文
+```
+去对应的目录查找密文文件
 
+	rsa.pub 复制密文，粘贴  settings -> SSH key and GPG -> new ssh key ->粘贴
+```bash
+	ssh -T git@github.com  //测试是否关联成功
+```
+
+2. 为仓库起别名，定位目标仓库，后续上传
+```bash
+	git remote add origin "ssh地址"  //为ssh仓库地址创建别名为origin
+```
+```bash
+	git remote remove origin  //删除origin别名
+```
+```bash
+	git remote add origin "ssh地址"  //为ssh仓库地址创建别名为origin
+```
+
+
+![交互逻辑图](C;//Users//lenovo//Desktop//3.jpg )
+
+```bash
+	git add  //添加内容
+```
+```bash
+	git rm  //删除本地文件并删除仓库数据
+```
+```bash
+	git restore  //恢复被删除（仓库存在）
+```
+
+###代码更新的依赖关系被破坏
+
+本地内容要比云端新，完成更新替换，但是如果直接修改云端内容，导致本地内容无法再提交
+解决办法：先拉取 git pull 云端内容 与本地内容合并或操作，而后再次推即可
+
+```bash
+	git pull --rebase origin master
+```
+```bash
+	git rebase --skip  //忽略本地内容，保留云端内容
+```
+```bash
+	git rebase --abort  //忽略本地内容，保留云端内容
+```
+```bash
+	git rebase --continue  //忽略本地内容，保留云端内容
+```
+
+###下载开源代码
+```bash
+	git clone "https仓库地址"  //下载开源项目code资源
+```
+
+
+###分支Branch
+关于分支的相关命令，创建分支，选择分支，合并分支等等
+
+
+Markdown ,github可以编写readme，文本修饰语言，用特殊符号修饰正文效果<br>
 
 #标题修饰符（一级标题）\#
 ##（二级标题）
